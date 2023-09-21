@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1d1c1c;
+    font-family: system-ui;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.chess{
+    width: 496px;
+    height: 496px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.chess .square{
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border: 1px solid #8080801f
+}
+
+.chess .sqcg{
+    background-color: #5c4d09d0;
+}
+.chess .sqcy{
+    background-color: #f5e381;
+}
+.chess .pawn1{
+    font-size: 30px;
+    padding-top: 13px;
+    padding-left: 20px;
+}
+
+.chess .pawn2{
+    color: #ffffffbd;
+    font-size: 30px;
+    padding-top: 13px;
+    padding-left: 20px;
+}
+
+.chess .rook1{
+    font-size: 30px;
+    padding-top: 13px;
+    padding-left: 17px;
+}
+.chess .rook2{
+    color: #ffffffbd;
+    font-size: 30px;
+    padding-top: 13px;
+    padding-left: 17px;
+}
+
+.chess .knight1{
+    font-size: 30px;
+    padding-top: 14px;
+    padding-left: 17px;
+}
+.chess .knight2{
+    color: #ffffffbd;
+    font-size: 30px;
+    padding-top: 14px;
+    padding-left: 17px;
+}
+
+.chess .bishop1{
+    font-size: 30px;
+    padding-top: 14px;
+    padding-left: 21px;
+}
+.chess .bishop2{
+    color: #ffffffbd;
+    font-size: 30px;
+    padding-top: 14px;
+    padding-left: 21px;
+}
+
+.chess .king1{
+    font-size: 30px;
+    padding-top: 14px;
+    padding-left: 18px;
+}
+.chess .king2{
+    color: #ffffffbd;
+    font-size: 30px;
+    padding-top: 14px;
+    padding-left: 18px;
+}
+.chess .queen1{
+    font-size: 30px;
+    padding-top: 14px;
+    padding-left: 16px;
+}
+.chess .queen2{
+    color: #ffffffbd;
+    font-size: 30px;
+    padding-top: 14px;
+    padding-left: 16px;
+}
